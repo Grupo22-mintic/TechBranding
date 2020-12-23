@@ -1,10 +1,14 @@
 <template>
 <div>
   <div v-if="estado">
-     <nav with="100%" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
+     <nav with="100%" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <a class="navbar-brand " href="# ">
             <img src="./assets/Imagen1.png" width="30 " height="30" class="d-inline-block align-top " alt=" " loading="lazy "> TECH BRANDING
         </a>
+        <form class="form-inline my-2 my-lg-0 formulario-buscar" >
+          <input class="form-control mr-sm-2 barra-busqueda" style="border-radius:50px;" type="search" placeholder="¿Que deseas buscar?" aria-label="Search">
+          <button class="btn btn-primary my-2 my-sm-0 buscar" style="border-radius:50px;" type="submit">Buscar</button>
+        </form>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
             <ul class="navbar-nav ">
                 <li class="nav-item active ">
@@ -262,4 +266,3 @@ export default {
   }
 };
 </script>
-

@@ -3,7 +3,7 @@
         <img class="card-img-top member" v-bind:src = member.image alt="Miembro del equipo">
         <div class="card-body-team">
             <p class="cabecera" style="text-align: center">Team Member<span> {{ member.codigo }}:  {{ member.rol }}</span></p>
-            <h5 class="card-title">{{ member.nombre }}</h5>
+            <h5 class="card-title nombre-miembro">{{ member.nombre }}</h5>
             <p class="card-text">{{ member.descripcion }}</p>
         </div>
     </div>
@@ -48,5 +48,10 @@
     .member{
 
         height: 230px;
+    }
+    .nombre-miembro{
+
+        font-size: 19px;
+        text-align: center;
     }
 </style>
